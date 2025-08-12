@@ -5,26 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       .container{
+       .container
+       {
         display:flex;
+        flex-wrap: wrap;
         justify-content:center;
         padding:18px;
         gap:30px
+        
        }
-       .box{
-        background-color:yellow:
-        border:30px solid black;
+       .box
+       {
+        background-color:palevioletred;
+        border: 3px solid black;
         height:200px;
         width:200px;
-    
-       }
+        align-items: center ;
+        font-size: 30px;
+        transition:transform 10s ease;
+        color: black;
+        }
+        .box1:hover{
+            transform: translate(150px,150px);
+
+        }
+        .box2:hover{
+            transform: translate(170px);
+
+        }
+         .box3:hover{
+            transform: translate(150px);
+
+        }
+        .box4:hover{
+        transform: rotate(90deg);
+        }
+        .box5:hover{
+            transform: skew(20deg);
+        }
+        .box6:hover{
+            transform:skew(20deg);
+        }
+         .box6:hover{
+            transform:skew(20deg,20deg);
+        }
+        .box8:hover{
+            transform: scale(1.2);
+        }
+        .box9:hover{
+            transform: scale(3) rotate(70deg) translate(100px) ;
+        }
+        .img-wrapper{
+            width: 400px;
+            height:400px ;
+            border: 4px saddlebrown;
+            position: relative;
+            overflow:hidden;
+        }
+        .inner-img{
+            width: 400px;
+            height: 500px;
+            transition: 3ms;
+        }
+        .inner-img:hover{
+            transform: scale(1.5);
+        }
+         .img-wrapper{
+            width: 400px;
+            height:400px ;
+            border: 4px saddlebrown;
+            position: relative;
+            overflow:hidden;
+        }
+        .inner-img{
+            width: 400px;
+            height: 500px;
+            transition: 3ms;
+        }
+        .inner-img:hover{
+            transform: scale(1.5);
+        }
+        
+        
+
     </style>
 </head>
 <body>
-    <div class="flex-container">
-         <div class="box box1"></div>
-          <div class="box box1"></div>
-           <div class="box box1"></div>
+    <div class="img-wrapper">
+        <img src="images/bk image.jpg" class="inner-img" alt="my img">
+        
+
     </div>
+    <div class="container">
+         <div class="box box1">translate x & y</div>
+          <div class="box box2">translate x</div>
+           <div class="box box3">translate y</div>
+          <div class="box box4">rotate</div>
+          <div class="box box5">skewx</div>
+          <div class="box box6">skew y</div>
+          <div class="box box7">skew z</div>
+          <div class="box box8">scale</div>
+          <div class="box box9">multiple
+
+          </div>
+    
 </body>
 </html>

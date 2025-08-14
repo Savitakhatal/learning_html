@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+        }
+        .swing{
+            animation:swing 1.5s ease-in-out infinite alternate ;
+            position: relative;
+            transform-origin: top center;
+        }
+        .swing img{
+            width: 200px;
+           border: 6px solid black;
+           box-shadow: 2px 3px 10px black;
+
+        }
+        @keyframes swing{
+            0%{transform: rotate(8deg);}
+            100%{transform:rotate(-7deg)}
+        }
+    </style>
+</head>
+<body>
+    <div class="swing">
+        <img src="images/SAVI PIC.jpg" alt="savi">
+    </div>
+</body>
+</html>

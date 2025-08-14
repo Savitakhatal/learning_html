@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media(min-width:320px)and(max-width:767px){
+            body{
+                font-size: 20px;
+                background:purple;
+            }
+            p{
+                display: none;
+            }
+            h1,h3{
+                color: beige;
+            }
+            .img1{
+                display: none;
+             
+            }
+
+        }
+        @media(min-width: 768px){
+            body{
+                background-color: green;
+            }
+        }
+        @media(min-width: 1024px){
+            body{
+                background-color:yellow;
+            }
+        }
+        @media(min-width: 1124px){
+            body{
+                background-color: orange;
+            }
+        }
+        @media(min-width: 1824px){
+            body{
+                background-color: skyblue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>css media query</h1>
+    <p>the background will change according to viewport width change</p><br><br>
+    <img src="images/social.jpeg">
+
+    <h3>smartphone - <span class="details">from 320px and up</span>(min-width: 320px)</h3>
+    <p>Blue</p>
+    <br>
+
+    <h3>tablets,ipad(landscape)-<span class="details">from 768px and up </span>
+        (min-width:768px)</h3>
+        <p>green</p>
+        <br>
+
+        <h3>tablets,ipad(landscape)-<span class="details">from 1024px and up </span>
+        (min-width:1024px)</h3>
+        <p>yellow</p><br>
+
+        <h3>desktop and laptop-<span class="details">from 1224px and up </span>
+        (min-width:1224px)</h3>
+        <p>blue</p><br>
+</body>
+</html>
